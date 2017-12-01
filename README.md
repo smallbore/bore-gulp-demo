@@ -1,4 +1,4 @@
-"## 简单gulp,项目构建demo"
+## 简单gulp,项目构建demo
 
 > "# -gulp-" 所有的环境都是在 node 安装好的基础上执行的。 node -v 查看node的安装情况。npm -v查看npm 的安装情况.
 
