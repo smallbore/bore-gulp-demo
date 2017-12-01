@@ -97,7 +97,7 @@ gulp.task('serve',['build'], function() {
     });
     // 在 命令工具中执行 gulp serve  就相当于是启动了服务
     //自动打开浏览器
-    open('http://192.168.5.59:1234');
+    open('http://localhost:1234');
     //我们希望更改了文件，就自动编译，并且打包等然后打开浏览器
     gulp.watch('bower_components/**/*' , ['lib']);
     //监听 script 下边的 js 文件，并执行 script 方法
