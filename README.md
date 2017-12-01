@@ -1,13 +1,18 @@
 ## 简易gulp,项目构建demo
 
-### -gulp- 所有的环境都是在 node 安装好的基础上执行的。 node -v 查看node的安装情况。npm -v查看npm 的安装情况.
+### -gulp- 所有的环境都是在 node 安装好的基础上执行的。
+
+node -v 查看node的安装情况。
+npm -v查看npm 的安装情况.
 
 #### 1.安装依赖
 > npm install
 
 #### 2.启动项目
 > gulp
+
 > 默认打开地址：'http://localhost:1234'
+
 > gulp clean 清除bulid , dist 目录。
 
 #### gulp自动化构建常用参数
