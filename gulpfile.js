@@ -47,7 +47,7 @@ gulp.task('json',function(){
 //将 index.less 文件 拷贝到 devPath prdPath中，index.less引入了所有的其他的less
 gulp.task('less',function(){
     gulp.src(app.srcPath + 'css/**/*.less')
-    // .pipe($.concat('style.css'))
+    // .pipe(px2rem())
     .pipe($.less())
     .pipe($.autoprefixer(['iOS >= 7', 'Android >= 4.1']))
     .pipe($.concat('style.css'))
