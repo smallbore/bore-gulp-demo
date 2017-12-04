@@ -23,9 +23,9 @@ npm -v查看npm 的安装情况.
 
 3、watch 检测文件
 
-4、tesk 指定任务
+4、pipe 用流的方式处理 gulp
 
-5、pipe 用流的方式处理 gulp
+5、tesk 指定任务
 
 #### 项目结构
 
