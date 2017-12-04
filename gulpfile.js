@@ -5,6 +5,7 @@ var $ = require('gulp-load-plugins')();
 //模块化，应用
 var fileinclude = require('gulp-file-include');
 var open = require('open');
+// var px2rem = require('gulp-px2rem-plugin');
 
 //定义目录路径
 var app = {
