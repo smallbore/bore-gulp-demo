@@ -5,7 +5,7 @@ var $ = require('gulp-load-plugins')();
 //模块化，应用
 var fileinclude = require('gulp-file-include');
 var open = require('open');
-// var px2rem = require('gulp-px2rem-plugin');
+// var px2rem = require('postcss-px2rem');
 
 //定义目录路径
 var app = {
@@ -45,10 +45,12 @@ gulp.task('json',function(){
     .pipe($.connect.reload());
 });
 
+// var processors = [px2rem({ remUnit: 75 })];
 //将 index.less 文件 拷贝到 devPath prdPath中，index.less引入了所有的其他的less
 gulp.task('less',function(){
+
     gulp.src(app.srcPath + 'css/**/*.less')
-    // .pipe(px2rem())
+    // .pipe($.postcss(processors))
     .pipe($.less())
     .pipe($.autoprefixer(['iOS >= 7', 'Android >= 4.1']))
     .pipe($.concat('style.css'))
